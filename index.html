@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shopping List</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <header>
+    <input type="text" id="search" name="search" oninput="filterList(event)" placeholder="Search Lists...">
+    <button id="addButton" onclick="createBlankList()">Create New List</button>
+  </header>
+
+  <div id="tray"></div>
+
+  <footer>NOTE: This site saves lists to local storage.</footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/paperOps.js"></script>
+</body>
+
+</html>

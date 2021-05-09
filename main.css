@@ -1,0 +1,128 @@
+html {
+  background-color: #573510;
+  background-image: url("./images/purty-wood.png");
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  padding: 0.8em;
+  position: fixed;
+  background-color: powderblue;
+  box-shadow: 0 8px 10px -6px black;
+}
+
+#search {
+  width: 40%;
+  padding: 6px;
+}
+
+#addButton {
+  padding: 6px 10px;
+  border-radius: 2em;
+  background-color: #539c56;
+  border-style: ridge;
+  color: white;
+  font-size: 20px;
+  float: right;
+  margin-right: 8%;
+}
+
+#addButton:hover {
+  background-color: #81f785;
+}
+
+#addButton:active {
+  background-color: #1b441c;
+}
+
+.paper {
+  width: 22em;
+  margin: 1em;
+  padding: 1em;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3em;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: url("./images/textured-paper.png");
+}
+
+.paper input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.paper input[name="newitem"] {
+  font-size: larger;
+  font-weight: normal;
+}
+
+.helptext {
+  color: grey;
+  margin: 0;
+  font-size: small;
+}
+
+.trash {
+  float: right;
+  padding: 0.2em;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.trash:hover {
+  transform: rotate(20deg);
+}
+
+.trash:active {
+  transform: rotate(90deg);
+}
+
+.trash img {
+  padding-top: 6%;
+  width: 2em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.paper ul > li {
+  padding: 0.5em;
+}
+
+.strikeoff {
+  text-decoration: line-through;
+  color: grey;
+}
+
+@media screen and (max-width: 500px) {
+  .paper {
+    width: 80%;
+  }
+}
+
+#tray {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 0.2em;
+  font-size: small;
+  color: #ffffff;
+}
